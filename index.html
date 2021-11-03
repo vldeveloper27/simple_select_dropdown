@@ -1,0 +1,15 @@
+<div id="select_dates"></div>
+<script>
+    var select_dates = document.getElementById('select_dates');
+    var days = [];
+    for (var i = 0; i < 31; i++) {
+        days.push({'title': i, 'value': i});
+    }
+    const options = {
+        el: select_dates,
+        array: days,
+        name: 'select_date',
+        placeholder: 'дата'
+    };
+    select(options);
+</script>
